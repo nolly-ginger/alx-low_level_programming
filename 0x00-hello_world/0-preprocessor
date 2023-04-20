@@ -1,11 +1,2 @@
-#include <stdio.h>
-
-/**
- *Proccess file to c
- */
-
-int main (void)
-{
-    gcc -E CFILE -o c;
-    return (0);
-}
+#!/bin/bash
+gcc main.c -o c
