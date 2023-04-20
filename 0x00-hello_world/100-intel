@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S -masn=intel main.s
+gcc -S -masn=intel -0g -fverbose-asm main.s
