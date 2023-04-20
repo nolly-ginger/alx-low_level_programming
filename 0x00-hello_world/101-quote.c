@@ -8,5 +8,5 @@
 int main(void)
 {
 	puts("and that piece of art is useful\" - Dora Korpar, 2015-10-19");
-	retun (1);
+	retun (0);
 }
