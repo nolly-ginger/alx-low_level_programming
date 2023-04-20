@@ -1,4 +1,4 @@
-#include <stcio.h>
+#include <stdio.h>
 
 /**
  * main-print exact sentance in printf
