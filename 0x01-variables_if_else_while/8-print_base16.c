@@ -8,11 +8,11 @@
 
 int main(void)
 {
-	char ch;
+	int i;
 
-	for (ch = 0; ch <= 16; ch++)
+	for (i = 48; i <= 58; i++)
 	{
-		putchar(ch);
+		putchar(i);
 	}
 
 	putchar ('\n');
