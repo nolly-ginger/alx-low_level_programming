@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+/**
+ * main- print all possible comb of two digits
+ *
+ * return: Always 0 (0Success)
+ */
+
+int main(void)
+{
+	int n, m;
+
+	for (n = 48; n <= 56; n++)
+	{
+		for (m = 49; m <= 57; m++)
+		{
+			if (m > n)
+			{
+				putchar(',');
+				putchar(' ');
+			}
+		}
+	}
+
+	putchar ('\n');
+
+	return (0);
+}
