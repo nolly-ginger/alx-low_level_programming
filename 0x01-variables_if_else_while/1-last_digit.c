@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 /**
  * main - Entry point
  *
@@ -17,11 +18,11 @@ int main(void)
 	}
 	else if (n == 0)
 	{
-		printf("and is 0\n", n);
+		printf("%d and is 0\n", n);
 	}
 	else
 	{
-		printf("and is less than 6 and not 0\n", n);
+		printf("%d and is less than 6 and not 0\n", n);
 	}
 	return (0);
 }
