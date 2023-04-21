@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main print combination of 2 two-diget numbers
+ * main - print combination of 2 two-diget numbers
  *
  * Return: Always 0 (Success)
  */
@@ -14,7 +14,7 @@ int main(void)
 	{
 		for (y = 0; y < 100; y++)
 		{
-			if (y<x)
+			if (y < x)
 			{
 				putchar((x / 10) + 48);
 				putchar((x % 10) + 48);
