@@ -3,7 +3,7 @@
 /**
  * main- print all possible comb of two digits
  *
- * return: Always 0 (0Success)
+ * Return: Always 0 (0Success)
  */
 
 int main(void)
