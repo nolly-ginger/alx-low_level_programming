@@ -3,7 +3,7 @@
 /**
  * main - creating list of alphabets
  *
- * return: always 0 (Success)
+ * Return: always 0 (Success)
  */
 
 int main(void)
@@ -15,5 +15,6 @@ int main(void)
 		putchar(letter);
 	}
 	putchar('\n');
+
 	return (0);
 }
