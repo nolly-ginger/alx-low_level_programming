@@ -1,21 +1,19 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- * creating list of alphabets
+ * main - creating list of alphabets
  *
  * return: always 0 (Success)
  */
 
 int main(void)
 {
-	char ch = 'a';
+	char letter;
 
-	while (ch <= 'z')
+	for (letter = 'a'; letter <= 'z'; letter++)
 	{
-		putchar(abcdefghijklmnopqrstuvwxyz);
+		putchar(letter);
 	}
-
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }
