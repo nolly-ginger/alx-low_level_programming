@@ -1,12 +1,13 @@
 #include "main.h"
 
 /**
- * main - check the cod
- * print_alphabet - print all alphabets in lowercase
+ * main - check the code
+ *
  * Return: Always 0.
  */
+
 int main(void)
 {
-	print_alphabets();
+	print_alphabet();
 	return (0);
 }

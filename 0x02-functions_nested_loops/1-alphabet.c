@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * main - print_alphabets in lowercase
+ * print_alphabet - all in lowercase
  *
  * Return: Always 0(Success)
  */
 
-void main(void)
+void print_alphabet(void)
 {
 	char i;
 
@@ -16,5 +16,4 @@ void main(void)
 	}
 
 	_putchar('\n');
-	return (0);
 }
