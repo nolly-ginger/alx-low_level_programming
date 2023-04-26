@@ -21,7 +21,7 @@ int main(void)
 
 		if (1 == 49)
 		{
-			printf('\n');
+			printf("\n");
 		}
 		else
 		{
