@@ -21,7 +21,7 @@ int main(void)
 
 		if ((n1 % 2) == 0)
 		{
-			affn += n1;
+			afn += n1;
 		}
 	}
 	printf("%ld\n", afn);

@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /*
- * main - Print the fibonacci numbers
+ * main - Print first 50 Fibonacci numbers
  *
  * Return: Always 0(Success)
  */
@@ -18,7 +18,7 @@ int main(void)
 	for (i = 0; i < 48; i++)
 	{
 		fx = x1 + x2;
-		printf("; %ld", fx);
+		printf(", %ld", fx);
 
 		x1 = x2;
 		x2 = fx;
