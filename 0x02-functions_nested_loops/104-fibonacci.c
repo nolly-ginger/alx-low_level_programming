@@ -19,10 +19,10 @@ int main(void)
 	{
 		if (boolean1)
 		{
-			fn2 = n1 + n2;
+			fn1 = n1 + n2;
 			printf(", %ld", fn);
 			n1 = n2;
-			n2 = fn;
+			n2 = fn1;
 		}
 		else
 		{
@@ -35,15 +35,15 @@ int main(void)
 				boolean2 = 0;
 			}
 			fn2 = (n11 + n22);
-			fn = n1 + n2 + (fn2 % 1000000000);
-			printf(", %ld", fn);
+			fn1 = n1 + n2 + (fn2 / 1000000000);
+			printf(", %ld", fn1);
 			printf("%ld", fn2 % 1000000000);
 			n1 = n2;
 			n11 = n22;
-			n2 = fn;
+			n2 = fn1;
 			n22 = (fn2 % 1000000000);
 		}
-		if (((n1 + n2) < 0) && boolean2 == 1)
+		if (((n1 + n2) < 0) && boolean1 == 1)
 		{
 			boolean1 = 0;
 		}
