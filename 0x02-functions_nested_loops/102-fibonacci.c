@@ -20,7 +20,7 @@ int main(void)
 		x1 = x2;
 		x2 = sum;
 
-		if (1 == 49)
+		if (i == 49)
 			printf("\n");
 		else
 			printf(",");
