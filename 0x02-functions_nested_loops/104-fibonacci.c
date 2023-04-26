@@ -20,7 +20,7 @@ int main(void)
 		if (boolean1)
 		{
 			fn1 = n1 + n2;
-			printf(", %ld", fn);
+			printf(", %ld", fn2);
 			n1 = n2;
 			n2 = fn1;
 		}
@@ -48,6 +48,6 @@ int main(void)
 			boolean1 = 0;
 		}
 	}
-	printf('\n');
+	printf("\n");
 	return (0);
 }
