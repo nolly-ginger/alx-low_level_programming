@@ -4,13 +4,15 @@
 /**
  * print_to_98 - print all natural numbers from n to 98
  * @n: will represent the natural number
+ *
+ * Return: null
  */
 
 void print_to_98(int n)
 {
 	if (n > 98)
 	{
-		for (; n < 98; n--)
+		for (; n > 98; n--)
 		{
 			printf("%d, ", n);
 		}
