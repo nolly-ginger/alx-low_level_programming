@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Print first 998 numbers
+ * main - Print first 98 numbers
  *
  * Return: Always 0(Success)
  */
@@ -24,16 +24,14 @@ int main(void)
 			n1 = n2;
 			n2 = fn1;
 		}
-		else
+		else if (boolean2)
 		{
-			if (boolean2)
-			{
-				n11 = n1 % 1000000000;
-				n22 = n2 % 1000000000;
-				n1 = n1 / 1000000000;
-				n2 = n2 / 1000000000;
-				boolean2 = 0;
-			}
+			n11 = n1 % 1000000000;
+			n22 = n2 % 1000000000;
+			n1 = n1 / 1000000000;
+			n2 = n2 / 1000000000;
+			boolean2 = 0;
+		}
 			fn2 = (n11 + n22);
 			fn1 = n1 + n2 + (fn2 / 1000000000);
 			printf(", %ld", fn1);
