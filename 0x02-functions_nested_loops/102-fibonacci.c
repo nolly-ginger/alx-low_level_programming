@@ -12,7 +12,7 @@ int main(void)
 	int i;
 	unsigned long x1 = 1, x2 = 2, sum;
 
-	for (i = 0; i < 53; i++)
+	for (i = 0; i < 50; i++)
 	{
 		sum = x1 + x2;
 		printf("%lu", sum);
@@ -23,7 +23,7 @@ int main(void)
 		if (i == 49)
 			printf("\n");
 		else
-			printf(",");
+			printf(", ");
 	}
 	return (0);
 }
