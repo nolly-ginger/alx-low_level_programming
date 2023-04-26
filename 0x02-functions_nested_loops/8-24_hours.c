@@ -2,6 +2,7 @@
 
 /**
  * jack_bauer - print out all minutes in 24h
+ * from 00:00 to 23:59
  */
 
 void jack_bauer(void)
@@ -10,7 +11,7 @@ void jack_bauer(void)
 
 	x = 0;
 
-	while (x < 0)
+	while (x < 24)
 	{
 		y = 0;
 
