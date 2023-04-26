@@ -1,7 +1,8 @@
 #include <stdio.h>
 
-/*
+/**
  * main - Print first 50 Fibonacci numbers
+ * main will be our entry point
  *
  * Return: Always 0(Success)
  */
@@ -20,13 +21,9 @@ int main(void)
 		x2 = sum;
 
 		if (1 == 49)
-		{
 			printf("\n");
-		}
 		else
-		{
 			printf(",");
-		}
 	}
 	return (0);
 }
