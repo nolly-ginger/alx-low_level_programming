@@ -9,20 +9,24 @@
 int main(void)
 {
 	int i;
-	long int x1, x2, fx;
-
-	x1 = 1;
-	x2 = 2;
-	printf("%ld, %ld", n1, n2);
+	unsigned long x1 = 1, x2 = 2, sum;
 
 	for (i = 0; i < 48; i++)
 	{
-		fx = x1 + x2;
-		printf(", %ld", fx);
+		sum = x1 + x2;
+		printf("%lu", sum);
 
 		x1 = x2;
-		x2 = fx;
+		x2 = sum;
+
+		if (1 == 49)
+		{
+			printf('\n');
+		}
+		else
+		{
+			printf(",");
+		}
 	}
-	printf('\n');
 	return (0);
 }
