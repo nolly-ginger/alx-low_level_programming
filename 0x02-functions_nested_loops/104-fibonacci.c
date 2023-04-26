@@ -31,7 +31,7 @@ int main(void)
 			n1 = n1 / 1000000000;
 			n2 = n2 / 1000000000;
 			boolean2 = 0;
-		}
+
 			fn2 = (n11 + n22);
 			fn1 = n1 + n2 + (fn2 / 1000000000);
 			printf(", %ld", fn1);
@@ -42,10 +42,8 @@ int main(void)
 			n22 = (fn2 % 1000000000);
 		}
 		if (((n1 + n2) < 0) && boolean1 == 1)
-		{
 			boolean1 = 0;
-		}
 	}
-	printf("\n");
+	printf('\n');
 	return (0);
 }
