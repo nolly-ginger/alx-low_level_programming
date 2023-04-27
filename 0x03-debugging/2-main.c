@@ -3,22 +3,26 @@
 
 /**
 * main - prints the largest of 3 integers
+* @a: first integer
+* @b: second integer
+* @c: third integer
+*
 * Return: Always 0(Success)
 */
 
-int largest_number(int a, int b,int c);
+int largest_number(int a, int b, int c);
 
 int main(void)
 {
-        int a, b, c, largest;
+	int a, b, c, largest;
 
-        a = 972;
-        b = -98;
-        c = 0;
+	a = 972;
+	b = -98;
+	c = 0;
 
-        largest = largest_number(a, b, c);
+	largest = largest_number(a, b, c);
 
-        printf("%d is the largest number\n", largest);
+	printf("%d is the largest number\n", largest);
 
-        return (0);
+	return (0);
 }
