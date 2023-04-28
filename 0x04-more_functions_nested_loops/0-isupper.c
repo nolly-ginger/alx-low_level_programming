@@ -5,7 +5,7 @@
  * to check for all uppercase charactrs
  * @c: will displace the input character
  *
- * Return: 1 if c is uppercase, otherwise return 0
+ * Return 1 if c is uppercase, otherwise return 0
  */
 
 int _isupper(int c)
@@ -14,12 +14,13 @@ int _isupper(int c)
 
 	for (c = 'A'; c <= 'Z'; c++)
 	{
-		while (c > 'a')
-			c++;
-		{
-			return (0);
-		}
 		return (1);
 	}
-	return (1);
+
+	for (c = 'a'; c <= 'z'; c++)
+	{
+		return (0);
+	}
+
+	return (c);
 }
