@@ -6,7 +6,7 @@
  * @c: will represent all input characers
  *
  * Return:1 (Success)
- * On error: -1
+ * On error, -1
  */
 
 int _putchar(char c)
