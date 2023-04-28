@@ -10,8 +10,6 @@
 
 int _isupper(int c)
 {
-	c = 28;
-
 	if (c >= 'A' && c <= 'Z')
 		return (1);
 
