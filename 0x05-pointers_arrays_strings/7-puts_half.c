@@ -11,7 +11,9 @@ void puts_half(char *str)
 {
 	int i, x, y;
 
-	while (str[x])
+	x = 0;
+
+	while (str[x] != '\0')
 	{
 		x++;
 	}
@@ -30,4 +32,5 @@ void puts_half(char *str)
 			_putchar(str[y + 1]);
 		}
 	}
+	_putchar('\n');
 }
