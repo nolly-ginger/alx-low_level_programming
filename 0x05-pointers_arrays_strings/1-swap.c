@@ -3,8 +3,7 @@
 /**
  * swap_int - entry point to swap values of two integers
  * @a: interegr 1
- * @b: integer 2i
- * @x: the swap of int
+ * @b: integer 2
  *
  * Return: void
  */
