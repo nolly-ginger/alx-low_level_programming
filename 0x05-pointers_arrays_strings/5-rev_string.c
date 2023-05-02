@@ -18,11 +18,6 @@ void rev_string(char *s)
 	{
 		printf("%s\n", s);
 	}
-
-	while (s[x] != '\0')
-	{
-		x++;
-	}
 	for (i = x - 1; i >= 0; i--)
 	{
 		printf("%s\n", s);
