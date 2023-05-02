@@ -20,6 +20,7 @@ void print_rev(char *s)
 
 	for (i = x - 1; i >= 0; i--)
 	{
-		printf("%s\n", s);
+		_putchar(s[i]);
 	}
+	_putchar('\n');
 }
