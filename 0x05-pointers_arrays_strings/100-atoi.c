@@ -35,8 +35,9 @@ int _atoi(char *s)
 			{
 				break;
 			}
-			i++;
+			y = 0;
 		}
+		i++;
 	}
 	if (y == 0)
 	{
