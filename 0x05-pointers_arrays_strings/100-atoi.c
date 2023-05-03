@@ -11,6 +11,13 @@ int _atoi(char *s)
 {
 	int i, n, x, y, z, num;
 
+	i = 0;
+	n = 0;
+	x = 0;
+	y = 0;
+	z = 0;
+	num = 0;
+
 	while (s[x] != '\0')
 	{
 		x++;
@@ -39,9 +46,11 @@ int _atoi(char *s)
 		}
 		i++;
 	}
+
 	if (y == 0)
 	{
 		return (0);
 	}
+
 	return (n);
 }
