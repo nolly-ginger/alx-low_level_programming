@@ -11,12 +11,13 @@
 char *rot13(char *n)
 {
 	int i, j;
-	char let1[] = "abcdefghijklmnopqrstvuwxyzABCDEFGHIJKLMNOPQRSTVUWXYZ";
-	char let2[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+
+	char *let1 = "abcdefghijklmnopqrstvuwxyzABCDEFGHIJKLMNOPQRSTVUWXYZ";
+	char *let2 = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
 	for (i = 0; n[i] != '\0'; i++)
 	{
-		for (j = 0; j < 52; j++)
+		for (j = 0; let1[j] != '\0'; j++)
 		{
 			if (n[i] == let1[j])
 			{
