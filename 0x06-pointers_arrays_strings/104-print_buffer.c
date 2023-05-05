@@ -20,7 +20,7 @@ void print_buffer(char *b, int size)
 		for (i = 0; i < size; i += 10)
 		{
 			printf("%.8x:", i);
-			for (j = i; j < i; j++)
+			for (j = i; j < i + 10; j++)
 			{
 				if (j % 2 == 0)
 					printf(" ");
