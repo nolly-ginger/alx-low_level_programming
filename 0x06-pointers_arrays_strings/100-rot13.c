@@ -3,28 +3,28 @@
 
 /**
  * *rot13 - encode a string using rot13
- * @n: the string
+ * @s: the string
  *
- * Return: n
+ * Return: s
  */
 
-char *rot13(char *n)
+char *rot13(char *s)
 {
 	int i, j;
 
 	char *let1 = "ABCDEFGHIJKLMNOPQRSTVUWXYZabcdefghijklmnopqrstvuwxyz";
 	char *let2 = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	for (i = 0; n[i] != '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		for (j = 0; let1[j] != '\0'; j++)
 		{
-			if (n[i] == let1[j])
+			if (s[i] == let1[j])
 			{
-				n[i] = let2[j];
+				s[i] = let2[j];
 				break;
 			}
 		}
 	}
-	return (n);
+	return (s);
 }
