@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * int _strspn - entry point to get lenth of prefix string
+ * _strspn - entry point to get lenth of prefix string
  * @s: the length of the string
  * @accept: the string
  *
