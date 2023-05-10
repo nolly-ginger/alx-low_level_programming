@@ -1,6 +1,6 @@
 #include "main.h"
-#include <math.h>
 
+int function_sqrt_recursion(int n, int j);
 /**
  * _sqrt_recursion - Return natural square root of given number
  * @n: given number
@@ -14,13 +14,26 @@ int _sqrt_recursion(int n)
 	{
 		return (-1);
 	}
+	return (function_sqrt_recursion(n, 0));
+}
 
-	int i;
+/**
+ * function_sqrt_recursion - entry point for main fuction
+ * @n: inicial var
+ * @j: second var
+ *
+ * Return: square results
+ */
 
-	if (i * i == n)
+int function_sqrt_recursion(int n, int j)
+{
+	if (j * j > n)
 	{
-		return (i);
+		return (-1);
 	}
-	else
-		return (_sqrt_recursion(n, i + 1));
+	if (j * j == n)
+	{
+		return (j);
+	}
+	return (function_sqrt_recursion(n, j + 1));
 }
