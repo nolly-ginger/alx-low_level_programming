@@ -6,7 +6,7 @@
  * @x: teh number beng returned
  * @y: the power of the number being returned
  *
- * Return: the value of x power by y
+ * Return: Always 0(Success)
  */
 
 int _pow_recursion(int x, int y)
@@ -20,5 +20,5 @@ int _pow_recursion(int x, int y)
 		return (1);
 	}
 	else
-		return (_pow_recursion(x, y));
+		return (_pow_recursion(x, y - 1) * x);
 }
