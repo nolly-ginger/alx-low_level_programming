@@ -9,6 +9,17 @@
 
 void _print_rev_recursion(char *s)
 {
+	int i = 0;
+
 	puts(s);
-	--s;
+	-- s;
+
+	if (i > 0)
+	{
+		puts(" ");
+	}
+	else
+	{
+		puts(s);
+	}
 }
