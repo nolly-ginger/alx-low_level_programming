@@ -5,7 +5,7 @@
  * _sqrt_recursion - Return natural square root of given number
  * @n: given number
  *
- * Return: Alwas 0(Success)
+ * Return: Alwas 0 (Success)
  */
 
 int _sqrt_recursion(int n)
@@ -14,6 +14,13 @@ int _sqrt_recursion(int n)
 	{
 		return (-1);
 	}
+
+	int i;
+
+	if (i * i == n)
+	{
+		return (i);
+	}
 	else
-		return (_sqrt_recursion(n * 0));
+		return (_sqrt_recursion(n, i + 1));
 }
