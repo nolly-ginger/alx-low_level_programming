@@ -3,6 +3,35 @@
 #include <string.h>
 
 /**
+ * words - split the string  into words
+ * @x: the string being split
+ *
+ * Return: the split string
+ */
+
+char words(char *x)
+{
+	int i, j, k;
+
+	i = 0;
+	j = 0;
+
+	for (k = 0; x[k] != '\0'; k++)
+	{
+		if (x[k] == ' ')
+		{
+			i = 0;
+		}
+		else if (i == 0)
+		{
+			i = 1;
+			j = 0;
+		}
+	}
+	return (j);
+}
+
+/**
  * **strtow - split the string  into words
  * @str: the string
  *
@@ -11,40 +40,44 @@
 
 char **strtow(char *str)
 {
-	int i = 0;
-	int x = 0;
-	int z = 0;
-	int j, y;
-	char **words;
+	char **y, *m;
+	int r, count, begin, finish;
+	int p = 0;
+	int l = 0;
+	int t = 0;
 
-	if (str == NULL || str[0] == '\0')
+	while (*(str + l))
+		l++;
+
+	count = words(str);
+
+	if (count == 0)
 		return (NULL);
-
-	for (j = 0; str[j] != '\0'; j++)
+	y = (char **) malloc(sizeof(char *) * (count + 1));
+	if (y == NULL)
+		return (NULL);
+	for (r = 0; r <= l; r++)
 	{
-		if (((j > 0) && (str[j - 1] != ' ')) || (str[j] != ' '))
+		if (str[r] == ' ' || str[r] == '\0')
 		{
-			i++;
-		}
-	}
+			if (t)
+			{
+				finish = r;
+				m = (char *) malloc(sizeof(char) * (t + 1));
+				if (m == NULL)
+					return (NULL);
 
-	words = malloc(sizeof(char *) * (i + 1));
-
-	for (j = 0; str[j] != '\0'; j++)
-	{
-		if (((j > 0) && str[j - 1] == ' ') || x == 0)
-		{
-			x = j;
+				while (begin < finish)
+					*m++ = str[begin++];
+				*m = '\0';
+				y[p] = m - t;
+				p++;
+				t = 0;
+			}
 		}
-		else if (str[j + 1] == '\0' || str[j + 1] == ' ')
-		{
-			y = j + 1;
-			words[j] = malloc((y + x) + 1);
-			memcpy(words[z], &(str[x]), ((y - x)));
-			words[z][((y - x))] = '\0';
-			z++;
-		}
+		else if (t++ == 0)
+			begin = r;
 	}
-	words[i] = NULL;
-	return (words);
+	y[p] = NULL;
+	return (y);
 }
