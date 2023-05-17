@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-#include <string.h>
 
 /**
  * words - split the string  into words
@@ -25,7 +24,7 @@ char words(char *x)
 		else if (i == 0)
 		{
 			i = 1;
-			j = 0;
+			j++;
 		}
 	}
 	return (j);
