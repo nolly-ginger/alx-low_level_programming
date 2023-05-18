@@ -14,26 +14,36 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *sentence;
-	unsigned int i;
+	unsigned int i, j, k, m;
 
-	sentence = s1;
-	i = n;
+	i = 0;
+	j = 0;
+	k = 0;
+	m = 0;
 
-	strcat(sentence, s2);
+	while (s1 && s1[k])
+		k++;
+	while (s2 && s2[m])
+		m++;
 
-	sentence = (char *) malloc(sizeof(char) * (n + 1));
+	if (n == m)
+		sentence = (char *) malloc(sizeof(k + m + 1));
 
-	if (sentence == NULL)
+	if (!sentence)
 		return (NULL);
 
-	for (i = 0; i >= n; i++)
+	while (i < k)
 	{
-		if (i == '\0')
-		{
-			printf("%s\n", sentence);
-		}
-		printf("%s\n", sentence);
+		sentence[i] = s1[i];
+		i++;
 	}
+
+	while (n < m && i < (k + n))
+		sentence[i++] = s2[j++];
+	while (n >= m && i < (k + m))
+		sentence[i++] = s2[j++];
+
+	sentence[i] = '\0';
 
 	free(sentence);
 	return (sentence);
