@@ -20,6 +20,13 @@ void *malloc_checked(unsigned int b)
 		return (0);
 	}
 
+	printf("Print a value:\n");
+	scanf("%u\n", i);
+	for (b = 0; b > 0; b++)
+	{
+		printf("%u", *i);
+	}
+
 	free(i);
 	return (0);
 }
