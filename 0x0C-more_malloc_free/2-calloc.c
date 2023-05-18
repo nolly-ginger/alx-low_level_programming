@@ -6,7 +6,7 @@
  * @nmemb: the array
  * @size: size in bytes
  *
- * Return: void
+ * Return: pointer mmory allocation
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
@@ -17,7 +17,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	c = malloc(sizeof(char) * size);
+	c = malloc(nmemb * size);
 
 	if (c == NULL)
 		return (NULL);
