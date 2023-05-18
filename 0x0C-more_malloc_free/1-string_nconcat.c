@@ -24,7 +24,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		k++;
 	while (s2 && s2[m])
 		m++;
-	if (n < k)
+
+	if (n < m)
 		sentence = (char *) malloc(sizeof(char) * (k + n + 1));
 	else
 		sentence = (char *) malloc(sizeof(char) * (k + m + 1));
@@ -45,6 +46,5 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	sentence[i] = '\0';
 
-	free(sentence);
 	return (sentence);
 }
