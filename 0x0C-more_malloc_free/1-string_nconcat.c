@@ -1,6 +1,4 @@
-#include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #include "main.h"
 
 /**
@@ -26,9 +24,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		k++;
 	while (s2 && s2[m])
 		m++;
-
-	if (n == m)
-		sentence = (char *) malloc(sizeof(k + m + 1));
+	if (n < k)
+		sentence = (char *) malloc(sizeof(char) * (k + n + 1));
+	else
+		sentence = (char *) malloc(sizeof(char) * (k + m + 1));
 
 	if (!sentence)
 		return (NULL);
