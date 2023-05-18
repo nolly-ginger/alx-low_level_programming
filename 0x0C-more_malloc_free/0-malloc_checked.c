@@ -10,23 +10,13 @@
 
 void *malloc_checked(unsigned int b)
 {
-	unsigned int *i;
+	void *i;
 
-	i = (unsigned int *) malloc(sizeof(unsigned int) * b);
+	i = malloc(b);
 
 	if (i == NULL)
 	{
-		printf("98");
-		return (0);
+		exit(98);
 	}
-
-	printf("Print a value:\n");
-	scanf("%u\n", i);
-	for (b = 0; b > 0; b++)
-	{
-		printf("%u", *i);
-	}
-
-	free(i);
-	return (0);
+	return (i);
 }
