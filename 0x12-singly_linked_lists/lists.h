@@ -16,10 +16,11 @@
 typedef struct list_s
 {
 	char *str;
-	unsigned long int len;
+	unsigned int len;
 	struct list_s *next;
 } list_t;
 
 size_t print_list(const list_t *h);
+void sentence(void);
 
 #endif
