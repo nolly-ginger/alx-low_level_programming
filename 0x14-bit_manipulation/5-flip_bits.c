@@ -15,7 +15,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	int i, j = 0;
 	unsigned long int now, needed = n ^ m;
 
-	for (i = 63; i >= 0; i++)
+	for (i = 63; i >= 0; i--)
 	{
 		now = needed >> i;
 		if (now & 1)
