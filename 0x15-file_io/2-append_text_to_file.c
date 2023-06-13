@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
-#include <stdio.h>
 
 /**
  * append_text_to_file - append a text at the end of a file
@@ -18,8 +16,10 @@ int append_text_to_file(const char *filename, char *text_content)
 		return (-1);
 
 	if (text_content != NULL)
-		for (k = 0; text_content[k]; k++)
-			;
+	{
+		for (k = 0; text_content[k];)
+			k++;
+	}
 
 	i = open(filename, O_WRONLY | O_APPEND);
 	j = write(i, text_content, k);
