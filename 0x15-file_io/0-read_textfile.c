@@ -24,14 +24,14 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (files == -1)
 		return (0);
 
-	c = malloc(sizeof(char) * letters);
+	c = malloc(sizeof(char) * (letters));
 	if (!c)
 		return (0);
 
 	texts = read(files, c, letters);
 	words = write(STDOUT_FILENO, c, texts);
 
-	free(c);
 	close(files);
+	free(c);
 	return (words);
 }
